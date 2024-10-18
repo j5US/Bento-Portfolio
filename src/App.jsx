@@ -1,8 +1,12 @@
+import GridConatainer from "./components/GridContainer";
+import Navbar from "./components/Navbar";
+
 function App() {
     return (
-        <h1 className="text-3xl font-bold underline poppins-semibold">
-            Hello world!
-        </h1>
+        <div className="p-[15px] min-h-screen max-w-[1228px] my-0 mx-auto flex flex-col ">
+            <Navbar/>
+            <GridConatainer/>
+        </div>
     )
 }
 
