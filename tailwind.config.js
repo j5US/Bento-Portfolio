@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         '15': 'repeat(15, 1fr)',
-      }
+      },
+      screens: {
+        'lg': '1025px',
+      },
     },
   },
   plugins: [],
