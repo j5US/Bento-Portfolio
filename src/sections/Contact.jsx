@@ -1,7 +1,20 @@
-function Contact({className}) {
+function Contact({ className }) {
     return (
         <div className={`dark-shade rounded-[15px] row-span-3 col-span-5 ${className}`} >
-            Contact
+             <div className="flex size-full flex-col justify-between gap-1 p-[20px]">
+                <div className="flex flex-row justify-between">
+                    <p className="text-[13px] leading-[120%] poppins-light max-w-[10ch]">Have some questions?</p>
+                    <small className="text-xl">🡥</small>
+                </div>
+
+                <h2
+                    className=" max-w-[10ch] poppins-regular pb-3 font-heading text-[2.3rem] leading-[100%]
+                    max-lg:w-[25ch] max-lg:text-[2.7rem] 
+                    max-md:w-[25ch] max-md:text-[2.5rem] 
+                    ">
+                    Contact me
+                </h2>
+            </div> 
         </div>
     );
 }
