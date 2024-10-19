@@ -34,7 +34,7 @@ function GridConatainer() {
             <Contact className="max-lg:hidden block max-md:block max-md:h-[330px] max-md:col-span-full"/>
             
 
-            <Social className="max-lg:col-span-full max-lg:h-[80px]"/>
+            <Social className="max-lg:col-span-full max-lg:h-[60px]"/>
         </div>
     );
 }
