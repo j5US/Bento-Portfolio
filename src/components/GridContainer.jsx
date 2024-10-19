@@ -22,7 +22,7 @@ function GridConatainer() {
             {/* <div className="max-lg:hidden block max-md:block dark-shade rounded-[15px] row-span-3 col-span-5 max-lg:col-span-5 max-lg:h-[350px] max-md:col-span-full">Content 5</div> */}
             {/* <div className="light-shade rounded-[15px] row-span-1 col-span-5 max-lg:col-span-full max-lg:h-[80px]">Content 6</div> */}
 
-            <Intro className="max-lg:col-span-6 max-lg:min-h-[350px] max-md:col-span-full"/>
+            <Intro className="max-lg:col-span-6 max-lg:min-h-auto max-md:col-span-full"/>
             <ProfileImage className="max-lg:col-span-4 max-lg:min-h-[350px] max-md:col-span-full"/>
 
             <About className="hidden max-lg:block max-lg:col-span-5 max-lg:h-[350px] max-md:col-span-full"/>
