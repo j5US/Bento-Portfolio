@@ -12,8 +12,8 @@ function Intro({ className }) {
 
                 <h1
                     className="break-words poppins-semibold max-w-[17ch] mb-8 font-heading text-[2.2rem] font-normal leading-10
-                    max-lg:w-[16ch] max-lg:text-[2.5rem] max-lg:leading-[100%]
-                    max-md:w-[10ch] max-md:text-[2.4rem] max-md:leading-[100%]
+                    max-lg:w-[16ch] max-lg:text-[2.5rem] max-lg:leading-[120%]
+                    max-md:w-[10ch] max-md:text-[2.4rem] max-md:leading-[110%]
                 ">
                     Techie Redefining <br />
                     <i className="poppins-light-italic mr-2">Applications</i>
