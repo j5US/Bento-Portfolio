@@ -19,6 +19,14 @@ body{
     color: #d4c7b4;
 }
 
+.profile-image{
+    border-radius: 15px;
+    background-image: url("./images/profile2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: 2; */
+}
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
