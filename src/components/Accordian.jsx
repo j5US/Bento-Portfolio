@@ -24,9 +24,9 @@ function Accordion({ items }) {
 
         return (
             <div key={item.id}>
-                <div className={`max-lg:text-[1.5rem] poppins-regular text-[1.2rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
+                <div className={`max-lg:text-[1.5rem] poppins-regular text-[1.3rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
                     {item.label}
-                    {<small className="text-xl">🡥</small>}
+                    {<small className={`text-xl ${isExpanded ? "block" : "hidden" }`}>🡥</small>}
                 </div>
                 {isExpanded && <div className="dark-shade mb-[15px] aspect-video max-w-full rounded-[15px] "></div>}
                 <hr className={`max-w-full border border-[#4c4c44b0] mb-[20px] ${(index === arr.length-1) ? "hidden": "block"}`}/>
