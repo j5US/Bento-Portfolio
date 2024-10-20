@@ -25,8 +25,8 @@ function GridConatainer() {
             <Intro className="max-lg:col-span-6 max-lg:min-h-auto max-md:col-span-full"/>
             <ProfileImage className="max-lg:col-span-4 max-lg:min-h-[400px] max-md:col-span-full"/>
 
-            <About className="hidden max-lg:block max-lg:col-span-5 max-lg:h-[350px] max-md:h-auto max-md:col-span-full"/>
-            <Contact className="hidden max-lg:block max-md:hidden max-lg:col-span-5 max-lg:h-[350px]"/>
+            <About className="hidden max-lg:block max-lg:col-span-5 max-lg:h-auto max-md:h-auto max-md:col-span-full"/>
+            <Contact className="hidden max-lg:block max-md:hidden max-lg:col-span-5 max-lg:h-auto"/>
             
             <Work className="max-lg:col-span-full max-lg:min-h-[500px] max-md:col-span-full "/>
 

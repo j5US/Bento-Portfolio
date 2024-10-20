@@ -4,7 +4,7 @@ function About({ className }) {
         <div className={`light-shade rounded-[15px] row-span-3 col-span-5 ${className}`} >
             <div className="flex size-full flex-col justify-between gap-1 p-[20px]">
                 
-                <div className="size-[2.5rem] max-md:mb-20 max-lg:size-[3rem]">
+                <div className="size-[2.5rem] max-lg:mb-14 max-md:mb-20 max-lg:size-[3rem]">
                     <img className="size-full" src={disc} alt="about icon" />
                 </div>
 
