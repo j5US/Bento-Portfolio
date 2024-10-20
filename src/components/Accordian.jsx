@@ -1,3 +1,4 @@
+import { GoArrowUpRight } from "react-icons/go";
 import { useState, useEffect } from "react";
 
 function Accordion({ items }) {
@@ -24,9 +25,11 @@ function Accordion({ items }) {
 
         return (
             <div key={item.id}>
-                <div className={`max-lg:text-[1.5rem] poppins-regular text-[1.3rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
+                <div className={`max-lg:text-[1.5rem] poppins-regular text-[1.25rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
                     {item.label}
-                    {<small className={`text-xl ${isExpanded ? "block" : "hidden" }`}>🡥</small>}
+                    {/* {<small className={`text-xl ${isExpanded ? "block" : "hidden" }`}>🡥</small>} */}
+                    {<GoArrowUpRight className={`text-2xl ${isExpanded ? "block" : "hidden" }`}/>}
+
                 </div>
                 {isExpanded && <div className="dark-shade mb-[15px] aspect-video max-w-full rounded-[15px] "></div>}
                 <hr className={`max-w-full border border-[#4c4c44b0] mb-[20px] ${(index === arr.length-1) ? "hidden": "block"}`}/>

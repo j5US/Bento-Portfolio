@@ -1,10 +1,12 @@
+import { GoArrowUpRight } from "react-icons/go";
 function Contact({ className }) {
     return (
         <div className={`dark-shade rounded-[15px] row-span-3 col-span-5 ${className}`} >
              <div className="flex size-full flex-col justify-between gap-1 p-[20px]">
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between items-center">
                     <p className="text-[13px] leading-[120%] poppins-light max-w-[10ch]">Have some questions?</p>
-                    <small className="text-xl">🡥</small>
+                    {/* <small className="text-xl">🡥</small> */}
+                    <GoArrowUpRight className="text-2xl"/>
                 </div>
 
                 <h2
