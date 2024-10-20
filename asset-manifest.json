@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Bento-Portfolio/static/css/main.830c99c5.css",
+    "main.js": "/Bento-Portfolio/static/js/main.dcc6a8fd.js",
+    "static/media/profile2.jpg": "/Bento-Portfolio/static/media/profile2.6422b6cb93f06f717395.jpg",
+    "static/media/intro-icon.svg": "/Bento-Portfolio/static/media/intro-icon.4fbd72bc3b59679152e38a21c7e14fe7.svg",
+    "static/media/about-icon.svg": "/Bento-Portfolio/static/media/about-icon.1c77422e1358ba546051ba3c4dfae3fd.svg",
+    "index.html": "/Bento-Portfolio/index.html",
+    "main.830c99c5.css.map": "/Bento-Portfolio/static/css/main.830c99c5.css.map",
+    "main.dcc6a8fd.js.map": "/Bento-Portfolio/static/js/main.dcc6a8fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.830c99c5.css",
+    "static/js/main.dcc6a8fd.js"
+  ]
+}
