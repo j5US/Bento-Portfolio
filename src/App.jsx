@@ -1,5 +1,6 @@
 import GridConatainer from "./components/GridContainer";
 import Navbar from "./components/Navbar";
+// import AccordionPage from "./sections/AccordianPage";
 
 function App() {
     return (
