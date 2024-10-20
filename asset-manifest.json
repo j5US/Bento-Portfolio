@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Bento-Portfolio/static/css/main.2892090c.css",
-    "main.js": "/Bento-Portfolio/static/js/main.06dd1c35.js",
+    "main.css": "/Bento-Portfolio/static/css/main.497bc546.css",
+    "main.js": "/Bento-Portfolio/static/js/main.cd5a411b.js",
     "static/media/profile2.jpg": "/Bento-Portfolio/static/media/profile2.6422b6cb93f06f717395.jpg",
     "static/media/intro-icon.svg": "/Bento-Portfolio/static/media/intro-icon.4fbd72bc3b59679152e38a21c7e14fe7.svg",
     "static/media/about-icon.svg": "/Bento-Portfolio/static/media/about-icon.1c77422e1358ba546051ba3c4dfae3fd.svg",
     "index.html": "/Bento-Portfolio/index.html",
-    "main.2892090c.css.map": "/Bento-Portfolio/static/css/main.2892090c.css.map",
-    "main.06dd1c35.js.map": "/Bento-Portfolio/static/js/main.06dd1c35.js.map"
+    "main.497bc546.css.map": "/Bento-Portfolio/static/css/main.497bc546.css.map",
+    "main.cd5a411b.js.map": "/Bento-Portfolio/static/js/main.cd5a411b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2892090c.css",
-    "static/js/main.06dd1c35.js"
+    "static/css/main.497bc546.css",
+    "static/js/main.cd5a411b.js"
   ]
 }
