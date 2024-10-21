@@ -36,7 +36,8 @@ function Accordion({ items }) {
             </div>
         );
     });
-    return <div className="h-[480px] overflow-y-auto scrollbar-hide max-lg:h-auto">{renderedItems}</div>
+    // max-lg:overflow-y-visible max-lg:max-h-auto max-h-[calc(100vh-260px)]
+    return <div className="h-[calc(100vh-260px)] min-h-[400px] max-lg:h-auto overflow-y-auto scrollbar-hide">{renderedItems}</div>
 }
 
 export default Accordion;
