@@ -25,7 +25,7 @@ function Accordion({ items }) {
 
         return (
             <div key={item.id}>
-                <div className={`max-lg:text-[1.5rem] poppins-regular text-[1.25rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
+                <div className={`max-md:text-xl max-lg:text-[1.5rem] poppins-regular text-[1.25rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
                     {item.label}
                     {/* {<small className={`text-xl ${isExpanded ? "block" : "hidden" }`}>🡥</small>} */}
                     {<GoArrowUpRight className={`text-2xl ${isExpanded ? "block" : "hidden" }`}/>}
