@@ -36,7 +36,7 @@ function Accordion({ items }) {
             </div>
         );
     });
-    return <div>{renderedItems}</div>
+    return <div className="h-[480px] overflow-y-auto scrollbar-hide max-lg:h-auto">{renderedItems}</div>
 }
 
 export default Accordion;

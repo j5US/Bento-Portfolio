@@ -20,6 +20,15 @@ body{
     color: #d4c7b4;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
 .profile-image{
     border-radius: 15px;
     background-image: url("./images/profile2.jpg");

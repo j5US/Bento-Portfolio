@@ -21,6 +21,11 @@ function AccordionPage() {
             id:4,
             label: "The Space Game",
             content: "This is content 3"
+        },
+        {
+            id:5,
+            label: "Reviews Insight",
+            content: "This is content 3"
         }
     ];
     return <Accordion items={items}/>
