@@ -25,8 +25,8 @@ function Navbar() {
                     className={`poppins-regular flex flex-row gap-[44px] mr-[20px]
                     ${isToggled ? "max-md:flex max-md:gap-[0] max-md:justify-between max-md:mr-[0px] max-md:w-[66%]": "max-md:hidden"}
                 `}>
-                    <button>Projects</button>
-                    <button>About</button>
+                    <button className="max-md:mr-[5px]">Projects</button>
+                    <button className="max-md:mr-[5px]">About</button>
                     <button>Contact</button>
                 </div>
 
