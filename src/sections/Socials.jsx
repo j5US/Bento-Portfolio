@@ -6,9 +6,9 @@ function Social({ className }) {
                 max-lg:text-[1.3rem]
                 max-md:text-[1rem]
             ">
-                <div>GITHUB</div>
-                <div>LINKEDIN</div>
-                <div>TWITTER</div>
+                <div>Github</div>
+                <div>LinkedIn</div>
+                <div>Twitter</div>
             </div>
         </div>
     );
