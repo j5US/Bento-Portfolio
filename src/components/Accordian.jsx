@@ -1,22 +1,11 @@
 import { GoArrowUpRight } from "react-icons/go";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Accordion({ items }) {
-    const [expandedIndex, setExpandedIndex] = useState(-1);
-
-    useEffect(() => {
-        // Set state to true when the component mounts
-        setExpandedIndex(0);
-    }, []);
+    const [expandedIndex, setExpandedIndex] = useState(0);
 
     const handleClick = (nxtindex) => {
-        setExpandedIndex((currentIndex) => {
-            if (currentIndex === nxtindex) {
-                return -1;
-            } else {
-                return nxtindex;
-            }
-        })
+        setExpandedIndex(() => nxtindex);
     };
 
     const renderedItems = items.map((item, index, arr) => {
@@ -28,11 +17,11 @@ function Accordion({ items }) {
                 <div className={`max-md:text-xl max-lg:text-[1.5rem] poppins-regular text-[1.25rem] flex justify-between items-center cursor-pointer mb-[15px]`} onClick={() => handleClick(index)}>
                     {item.label}
                     {/* {<small className={`text-xl ${isExpanded ? "block" : "hidden" }`}>🡥</small>} */}
-                    {<GoArrowUpRight className={`text-2xl ${isExpanded ? "block" : "hidden" }`}/>}
+                    {<GoArrowUpRight className={`text-2xl ${isExpanded ? "block" : "hidden"}`} />}
 
                 </div>
                 {isExpanded && <div className="dark-shade mb-[15px] aspect-video max-w-full rounded-[15px] "></div>}
-                <hr className={`max-w-full border border-[#4c4c44b0] mb-[20px] ${(index === arr.length-1) ? "hidden": "block"}`}/>
+                <hr className={`max-w-full border border-[#4c4c44b0] mb-[20px] ${(index === arr.length - 1) ? "hidden" : "block"}`} />
             </div>
         );
     });
