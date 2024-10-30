@@ -9,7 +9,9 @@ function App() {
     useEffect(() => {
         // Event handler for load
         const handleLoad = () => {
-            setLoading(false);
+            setTimeout(() => {
+                setLoading(false);
+              }, 2000);
         };
 
         // Add event listener for load
