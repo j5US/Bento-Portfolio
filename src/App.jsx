@@ -7,30 +7,38 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Event handler for load
-        const handleLoad = () => {
-            setLoading(false);
+        // Event handler for beforeunload
+        const handleBeforeUnload = () => {
+            setLoading(true); // Set loading state when the user tries to leave
         };
 
-        // Add event listener for load
+        // Event handler for load
+        const handleLoad = () => {
+            setLoading(false); // Set loading state to false when the page is fully loaded
+        };
+
+        // Add event listeners
+        window.addEventListener('beforeunload', handleBeforeUnload);
         window.addEventListener('load', handleLoad);
 
-        // Cleanup function to remove event listener
+        // Cleanup function to remove event listeners
         return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
             window.removeEventListener('load', handleLoad);
         };
     }, []);
+
     return (<>
-    {loading ? (
-        <div>Loading</div>
-      ) : (
-        <div className="p-[15px] min-h-screen max-w-[1228px] my-0 mx-auto flex flex-col ">
-            <Navbar />
-            <GridConatainer />
-        </div>
-      )}
-        
-        </>
+        {loading ? (
+            <div>Loading</div>
+        ) : (
+            <div className="p-[15px] min-h-screen max-w-[1228px] my-0 mx-auto flex flex-col ">
+                <Navbar />
+                <GridConatainer />
+            </div>
+        )}
+
+    </>
     )
 }
 
