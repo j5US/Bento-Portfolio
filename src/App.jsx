@@ -7,22 +7,15 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Event handler for load
-        const handleLoad = () => {
-            setTimeout(() => {
-                setLoading(false);
+        // Simulate loading for a brief moment to ensure everything is set up
+        const timeout = setTimeout(() => {
+            setLoading(false);
+        }, 2000); // Adjust time as needed
 
-            }, 2000);
-        };
-
-        // Add event listener for load
-        window.addEventListener('load', handleLoad);
-
-        // Cleanup function to remove event listener
-        return () => {
-            window.removeEventListener('load', handleLoad);
-        };
+        // Cleanup timeout
+        return () => clearTimeout(timeout);
     }, []);
+
 
 
     return (<>
