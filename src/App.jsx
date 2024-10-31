@@ -21,7 +21,7 @@ function App() {
 
 
     return (<>
-        {loading ? <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        {loading ? <div className="absolute-center">
             <FallingLines
                 color="#d4c7b4"
                 width="100"
